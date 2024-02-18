@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestling av Kinobiletter</title>
+    <script src="oblig_1.js"></script>
+
+</head>
+<body>
+<h1> Bestilling av Kinobiletter</h1>
+
+<label  for="velg"> Velg Film
+    <select id = "velg">
+        <option disabled selected value=""> velg film her</option>
+        <option value="Film1">Film1</option>
+        <option value="Film2">Film2</option>
+        <option value="Film3">Film3</option>
+        <option value="Film4">Film4</option>
+    </select>
+</label>
+<table>
+    <tr><td>Antall</td><td><input type="text" id="antall"/></td> <td id ="antall-text"> </td></tr>
+    <tr><td>Fornavn</td><td><input type="text" id="fornavn"/></td><td id ="fornavn-text"> </td></tr>
+    <tr><td>Etternavn</td><td><input type="text" id="etternavn"/></td><td id ="etter-text"> </td></tr>
+    <tr><td>Telefonnr</td><td><input type="tel" pattern="[0-9]{8}" required id="telefonnr"/></td><td id ="tel-text"> </td></tr>
+    <tr><td>E-post</td><td><input type="email" id="epost" required/></td><td id ="E-text"> </td></tr>
+    <tr><td>  <button onclick="registrer()">Kjøpbillet</button></td></tr>
+</table>
+<h1>Alle billetter</h1>
+<button onclick="fjern()">Slett alle billet</button>
+<div id="billetRegister">
+    <table id="tic">
+        <tr>
+            <th>Film</th>
+            <th>Anttal</th>
+            <th>Fornavn</th>
+            <th>Ettenavn</th>
+            <th>Tlf</th>
+            <th>E-post</th>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>
