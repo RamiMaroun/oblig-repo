@@ -24,6 +24,10 @@ function registrer() {
         document.getElementById("film-text").style.color = "red"
         return; // Stop the function if validation fails
     }
+    else {
+        document.getElementById("film-text").innerHTML = ""
+
+    }
 
     if (antall.length === 0) {
         document.getElementById("antall-text").innerHTML = "Du må skrive antall"
