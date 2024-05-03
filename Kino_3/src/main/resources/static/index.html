@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestling av Kinobiletter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+</div>
+<h1> Bestilling av Kinobiletter</h1>
+
+
+<table class="table table-borderless table-dark">
+    <tr><td><label  for="velg"> Velg Film
+
+    </label></td>
+        <td> <select id = "velg">
+            <option disabled selected value=""> velg film her</option>
+            <option value="Film1">Film1</option>
+            <option value="Film2">Film2</option>
+            <option value="Film3">Film3</option>
+            <option value="Film4">Film4</option>
+        </select></td>
+    <td><label id="film-text" class="text-danger"></label></td></tr>
+    <tr><td>Antall</td><td><label><input type="text" id="antall"/></label></td> <td id ="antall-text" class="text-danger"> </td></tr>
+    <tr><td>Fornavn</td><td><label><input type="text" id="fornavn"/></label></td><td id ="fornavn-text" class="text-danger"> </td></tr>
+    <tr><td>Etternavn</td><td><input type="text" id="etternavn"/></td><td id ="etter-text" class="text-danger"> </td></tr>
+    <tr><td>Telefonnr</td><td><input type="text" id="telefonnr"/></td><td id ="tel-text" class="text-danger"> </td></tr>
+    <tr><td>E-post</td><td><input type="text" id="epost"/></td><td id ="E-text" class="text-danger"> </td></tr>
+</table>
+<button type="button" onclick="registrer()" class="btn btn-success">Kjøpbillet</button>
+<h1>Alle billetter</h1>
+<div id="visInfo"></div>
+<button onclick="sletteAlt()" class="btn btn-danger">Slett alle billet</button>
+
+<script src="oblig_1.js">
+
+</script>
+
+</body>
+</html>
